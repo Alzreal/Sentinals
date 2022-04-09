@@ -46,23 +46,23 @@
 <header>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="{% static 'img/logo2.png' %}" alt="Sentinels logo" style="height: 50px; width: 80px;"></a>
+            <a class="navbar-brand" href="/home"><img src="{% static 'img/logo2.png' %}" alt="Sentinels logo" style="height: 50px; width: 80px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home <i class="bi bi-house"></i></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" aria-current="page" href="/home">Home <i class="bi bi-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="/roster">Roster</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/schedule">Schedule</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form> -->
@@ -71,7 +71,7 @@
     </nav>
 </header>
 
-<main style="background-color: rgb(210, 210, 221);">
+<main style="background-color: rgb(197, 219, 255);">
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -215,9 +215,10 @@
 
 <!-- FOOTER -->
     <footer class="container">
-    <p class="float-end"><a class="btn btn-success btn-sm" href="/" role="button">Back to top <i class="bi bi-box-arrow-up"></i></a>
+    <p class="float-end"><a class="btn btn-success btn-sm" href="/home" role="button">Back to top <i class="bi bi-box-arrow-up"></i></a>
     <p>&copy; C. Farell Web Productions &middot; Site created ultilizing Bootstrap v5.1 <i class="bi bi-bootstrap"></i> </p>
     </footer>
+    <br>
 
     </main>
 

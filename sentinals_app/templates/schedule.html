@@ -15,23 +15,23 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="{% static 'img/logo2.png' %}" alt="Sentinels logo" style="height: 50px; width: 80px;"></a>
+                <a class="navbar-brand" href="/home"><img src="{% static 'img/logo2.png' %}" alt="Sentinels logo" style="height: 50px; width: 80px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home <i class="bi bi-house"></i></a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link active" aria-current="page" href="/home">Home <i class="bi bi-house"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="/roster">Roster</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/schedule">Schedule</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <!-- <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form> -->
@@ -72,6 +72,20 @@
                     <td>7:00 AM EST</td>
                     <td>N/A</td>
                 </tr>
+                <tr>
+                    <th scope="row">May 13th-15th 2022</th>
+                    <td>BLPA Tournament</td>
+                    <td><a href="https://www.thegardensicehouse.com/">The Gardens Ice House</a></td>
+                    <td>12:00 PM EST</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <th scope="row">July 15th-17th 2022</th>
+                    <td>Oaks Center Ice Tournament</td>
+                    <td><a href="https://www.oakscenterice.com/tournaments/">Oaks Center Ice</a></td>
+                    <td>7:00 PM EST</td>
+                    <td>N/A</td>
+                </tr>
                 <!-- <tr>
                     <th scope="row"></th>
                     <td></td>
@@ -82,10 +96,15 @@
             </tbody>
         </table>
     </div>
+    <br>
+    <div class='d-flex justify-content-center'>
+        <h3>More events to be announced. Continue to check back.</h3>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="container" style="margin-top: 50px;">
+    <footer class="container" style="margin-top: 100px;">
         <p class="float-end"><a class="btn btn-success btn-sm" href="/schedule" role="button">Back to top <i class="bi bi-box-arrow-up"></i></a>
+        <p class="float-end"><a class="btn btn-primary btn-sm" href="/home" role="button" style="margin-right: 5px;">Home <i class="bi bi-house"></i></a>
         <p>&copy; C. Farell Web Productions &middot; Site created ultilizing Bootstrap v5.1 <i class="bi bi-bootstrap"></i> </p>
     </footer>
 
